@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Headland+One&display=swap');
+
+body{
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: darkred;
+    font-family: 'Headland One', sans-serif;
+}
+
+.card{
+    width: 900px;
+    height: 530px;
+
+    background: #eee;
+
+    display: flex;
+
+    border-radius: 35px;
+    overflow: hidden;
+
+    animation: fadeIn 1s ease;
+}
+
+/* LEFT */
+
+.left{
+    width: 50%;
+    background: linear-gradient(to bottom,#7f2eff,#d63884);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    border-radius: 0 50px 50px 0;
+}
+
+.left img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 50px 50px 0;
+}
+
+/* RIGHT */
+
+.right{
+    width: 50%;
+    padding: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right h1{
+    text-align: center;
+    color: #ff4dff;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 18px;
+
+    margin-bottom: 20px;
+
+    border: none;
+    border-radius: 15px;
+
+    background: white;
+
+    font-size: 20px;
+
+    box-sizing: border-box;
+}
+
+/* BUTTON LOGIN */
+
+button{
+    width: 100%;
+    padding: 18px;
+
+    border: none;
+    border-radius: 15px;
+
+    font-size: 22px;
+    cursor: pointer;
+}
+
+button:first-of-type{
+    background: #d41472; 
+    color: white; 
+    margin-bottom: -10px;
+}
+
+.signin {
+    display:flex;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
+    color: #ff4dff;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
